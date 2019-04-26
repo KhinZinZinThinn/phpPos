@@ -1,0 +1,7 @@
+RewriteEngine On
+
+Options -Indexes
+
+RewriteRule ^show/?$ show.php [NC,L]
+RewriteRule ^send/?$ send.php [NC,L]
+RewriteRule ^show/(.*)/(.*)/(.*)/?$ show.php?id=$1&name=$2&email=$3
